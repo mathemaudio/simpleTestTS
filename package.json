@@ -1,0 +1,24 @@
+{
+    "name": "simpletest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "1ts": "set TSC_NONPOLLING_WATCHER=1 & tsc --watch",
+        "test": "./node_modules/.bin/cucumber-js --exit",
+        "playground": "open https://try.playwright.tech/?l=javascript",
+        "docs": "https://playwright.dev/docs/api/class-playwright",
+        "record": "playwright codegen --target javascript -o __REC__.js https://rarefbtests.xyz"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@cucumber/cucumber": "^8.5.1",
+        "cucumber-console-formatter": "1.0.0",
+        "playwright": "^1.24.2"
+    },
+    "devDependencies": {
+        "typescript": "4.5.5"
+    }
+}
